@@ -1,0 +1,354 @@
+
+/**
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 15/02/2019
+ * Time: 14.46
+ */
+
+/*
+Theme Name: Websky
+Theme URI: http://websky.dk/themes/websky
+Author: Websky team
+Author URI: http://websky.dk/
+Description: The  theme for WordPress customer theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black,
+Text Domain: websky
+
+This theme, websky, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+    font-family:  "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+a:link, a:visited{
+    color: #006ec3;
+}
+p{
+    line-height: 1.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1em 0;
+    font-weight: normal;
+}
+/*General layout */
+div.container{
+    max-width:920px;
+    margin: 0 auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+/* Header */
+.site-header {
+
+    margin-bottom: 20px;
+    padding: 30px 0 0 0;
+}
+/*
+Main content
+*/
+div.main-column{
+    width:66%;
+  float:left;
+
+}
+/*  Secondary content */
+
+div.secondary-column{
+    width:30%;
+    float: right;
+}
+article.post{
+    border-bottom: 2px dotted #999;
+    border-top: 20px;
+}
+article.post:last-of-type {
+    border-bottom:none;
+}
+/* Navigation Menu */
+.site-nav ul{
+    margin:0;
+    padding:0;
+}
+.site-nav ul:before, .site-nav ul:after{content: "";display:table;}
+.site-nav ul:after{clear: both;}
+.site-nav ul{ *zoom:1;}
+.site-nav ul li {
+    list-style:none;
+    float: left;
+
+
+}
+/* header Menu*/
+.site-header nav ul li {
+    margin-right:5px ;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display:block;
+    padding: 10px 18px;
+    border: 1px solid #BBB;
+
+    text-decoration: none;
+
+}
+.site-header nav ul li a:hover{
+    background-color: #ECECEC;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+    font-weight: bold;
+    background-color:#006ec3;
+    color:#FFF;
+}
+/*Footer Menu*/
+
+.site-footer nav ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px  dotted #006ec3;
+
+}
+/* footer Widget Area*/
+
+div.footer-widget-area{
+    width:25%;
+    float:right;
+    padding:20px 40px  0  20px;
+
+    box-sizing: border-box;
+    min-height:230px;
+    background-color:#b0b3b4;
+
+}
+/* Page Layout **/
+article.page h2{
+    font-size: 225%;
+    margin-bottom: 15px;
+}
+
+/* Clearfix */
+/* this make the title at the biggining*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+div.title-column{
+     width:30%;
+    float: left;
+}
+div.text-column{
+  width:70%;
+    float:right;
+}
+/*children links*/
+
+.children-links{
+    margin-bottom:20px;
+    font-size:80%;
+}
+.children-links a:link,
+.children-links a:visited{
+    text-decoration: none;
+}
+.children-links ul{
+    float: left;
+}
+.children-links li {
+    margin-right: 20px;
+}
+.children-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+    font-size: 120%;
+    font-weight: Bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited{
+    color:#333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+    border-bottom: 1px solid #DDD;
+    color:#333;
+    cursor: default;
+}
+
+/**Post styles */
+.post h2 {
+    margin-bottom:0;
+}
+p.post-info{
+    font-size:87%;
+    color: #999;
+}
+p.post-info a:link,
+p.post-info a:visited {
+    color:#999;
+}
+/*  image Style  */
+img{
+    max-width:100%;
+    height: auto;
+}
+.has-thumbnail {
+    position: relative;
+    padding-left: 200px;
+}
+.post-thumbnail{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
+.one-half{
+   width:45%;
+    float: left;
+    margin-right:10%;
+}
+.last{
+margin-right:0;
+}
+.home-columns{
+    padding-top: 30px;
+}
+
+.home-columns .post-item {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 1px;
+    margin-bottom: 16px;
+}
+
+.home-columns .square-thumbnail {
+    float: left;
+    margin-right: 10px;
+}
+.home-columns p {
+    font-size: 83%;
+}
+
+.home-columns .post-item:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.home-columns h4 {
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.home-columns h4 a {
+    text-decoration: none;
+}
+
+.home-columns h4 a:hover {
+    text-decoration: underline;
+}
+
+.subtle-date {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 80%;
+    color: #FFF;
+    background-color: #BABABA;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .33);
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+
+/** search box**/
+
+div.hd-search{
+    float:right;
+}
+div.hd-search label {
+    position: absolute;
+    left:-9999px;
+}
+div.hd-search #searchsubmit{
+    background-color: #006ec3;
+    color:#FFF;
+    padding: 5px 14px;
+    border:none;
+
+    vertical-align:top;
+}
+div.hd-search #s {
+    vertical-align: top;
+    padding: 3px 0;
+}
+
+/* Post aside*/
+article.post-aside{
+    background-color:#0096dd;
+    color:#FFF;
+    font-size: 12px;
+    padding: 5px 0px 5px 15px;
+    border-radius: 5px;
+
+}
+.square-thumbnail img{
+    width:80px;
+    height: 80px;
+    margin-right: 10px;
+
+}
+/* Button views   */
+.btn-a,
+.btn-a:link,
+.btn-a:visited {
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #006ec3;
+    text-decoration: none;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .6);
+}
+
+.btn-a:hover {
+    background-color: #004C87;
+}
+
+.horiz-center {
+    display: block;
+    text-align: center;
+}
+/* Footer callout   */
+
+
+.footer-callout{
+    background-color: #DDD;
+    padding: 20px;
+    margin: 30px 0 20px 0;
+}
+.footer-callout-image{
+    width:30%;
+ float: left;
+}
+.footer-callout-text{
+
+    float:right;
+    width:67%;
+}
+.footer-callout-text h2{
+    font-size:1.7rem;
+    margin: 0 0 .35rem 0;
+}
+.footer-callout-text p{
+    font-size:.9rem;
+
+}
